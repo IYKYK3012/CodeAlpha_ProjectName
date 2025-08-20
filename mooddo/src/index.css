@@ -1,0 +1,55 @@
+/* index.css */
+
+:root {
+  --background-light: #ffffff;
+  --text-light: #000000;
+
+  --background-dark: #1e1e1e;
+  --text-dark: #ffffff;
+
+  --mood-happy: #fff59d;
+  --mood-productive: #a5d6a7;
+  --mood-calm: #b3e5fc;
+  --mood-stressed: #ef9a9a;
+  --mood-tired: #7986cb;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Mood classes */
+.happy {
+  background-color: var(--mood-happy);
+}
+
+.productive {
+  background-color: var(--mood-productive);
+}
+
+.calm {
+  background-color: var(--mood-calm);
+}
+
+.stressed {
+  background-color: var(--mood-stressed);
+}
+
+.tired {
+  background-color: var(--mood-tired);
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+/* Light mode */
+.light-mode {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}

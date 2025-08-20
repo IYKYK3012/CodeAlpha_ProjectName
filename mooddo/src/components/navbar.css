@@ -1,0 +1,73 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mood-emojis {
+  display: flex;
+  gap: 12px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.emoji:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}
+
+.mode-toggle {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.mode-toggle:hover {
+  transform: scale(1.2);
+}
+
+/* Theme colors */
+body.light-mode {
+  background-color: #f9f9f9;
+  color: #111;
+}
+
+body.dark-mode {
+  background-color: #111;
+  color: #f9f9f9;
+}
+
+body.happy {
+  background-color: #ffeb3b;
+}
+
+body.productive {
+  background-color: #4caf50;
+}
+
+body.calm {
+  background-color: #add8e6;
+}
+
+body.stressed {
+  background-color: #e53935;
+}
+
+body.tired {
+  background-color: #0d47a1;
+}
